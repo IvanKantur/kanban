@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+html {
+  background-color: rgb(30, 137, 199);
+  margin: 0 auto;
+  width: 1250px;
+  max-height: 700px;
+}
+/* 
+.container {
+  max-width: 1250px; 
+  margin: 0 auto;
+} */
