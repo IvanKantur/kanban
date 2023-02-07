@@ -7,7 +7,7 @@ class Header extends React.Component {
     constructor(props){
 super(props);
 this.state = {isAnActive : "false"};
-this.state = { showSelect : "false"};
+this.state = { showProfileMenuList : "false"};
 
 this.arrowClick = this.arrowClick.bind(this);
 
@@ -16,7 +16,7 @@ this.arrowClick = this.arrowClick.bind(this);
     arrowClick () {
         this.setState(prevState => ({
             isAnActive: !prevState.isAnActive,
-            showSelect: !prevState.showSelect
+            showProfileMenuList: !prevState.showProfileMenuList
           }));
     }
 
@@ -27,12 +27,18 @@ this.arrowClick = this.arrowClick.bind(this);
                 <div className="logos">
                     <img className="logo" src="../logos/user-avatar.svg" alt="avatar" />
                     <img onClick={this.arrowClick} className="arrow" src={this.state.isAnActive ? "./logos/arrow-up.svg" : "./logos/arrow-down.svg"} alt="arrow" />
-                        <select className={this.state.showSelect ? "active" : "inactive"}>
+                        {/* <select className={this.state.showSelect ? "active" : "inactive"}>
                             
                             <option value="Profile">Profile</option>
                             <option value="Log Out">Log Out</option>
-                        </select>
-                    
+                        </select> */}
+                        <div className={this.state.showProfileMenuList ? "active" : "inactive"}>
+                            <img className="profile-rectangle" src="./logos/Rectangle-27.svg" alt="" />
+                            <div className="profile-menu-list">
+                                <div className="profile-menu-li">Profile</div>
+                                <div className="profile-menu-li">Log out</div>
+                            </div>
+                        </div>
                 </div>
             </div>
         );

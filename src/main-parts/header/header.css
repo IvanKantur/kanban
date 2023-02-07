@@ -40,25 +40,28 @@ h1 {
 }
 
 .active {
-    color: aliceblue;
-    background-color: rgba(0, 103, 163, 1);
+    position: absolute;
+    top: 0px;
+    right: 8px;
 }
 
 .inactive {
-    
     display: none;
 }
 
-.logo {
-    
-    top: 11px;
-    right: 40px;
+.logo {    
+    position: relative;
+    /* top: 8px; */
+    right: 41px;
     height: 40px;
     width: 40px;
 }
 
 .arrow {
-    margin-left: 7px;
+    position: absolute;
+    /* top: 23px; */
+    /* right: 24px; */
+    /* margin-left: 7px; */
     height: 24px;
     width: 24px;
     cursor: pointer;
@@ -67,4 +70,38 @@ h1 {
 .user-menu{
     right: 5px;
     top: 11px;
+}
+
+.profile-rectangle {
+    position: absolute;
+    top: 53px;
+    right: 45.44px;
+}
+
+.profile-menu-list {
+    justify-content: center;
+    vertical-align: middle;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    top: 61px;
+    right: 9px;
+    width: 134px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding-top: 5px;
+}
+
+.profile-menu-li {
+    height: 22px;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.profile-menu-li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 103, 163, 1);
+    color: #FFFFFF;
 }
