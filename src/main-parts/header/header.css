@@ -1,9 +1,12 @@
+@media all and (orientation: landscape), all and (min-width: 1235px) { 
+
 .header {
     margin: 0;
     position: absolute;
     left: 0;
     height: 55px;
-    width: 1250px;
+    /* min-width: 1250px; */
+    width: 100vw;
     background-color: rgba(0, 103, 163, 1);
     display: flex;
     justify-content: space-between;
@@ -59,9 +62,6 @@ h1 {
 
 .arrow {
     position: absolute;
-    /* top: 23px; */
-    /* right: 24px; */
-    /* margin-left: 7px; */
     height: 24px;
     width: 24px;
     cursor: pointer;
@@ -104,4 +104,6 @@ h1 {
     cursor: pointer;
     background-color: rgba(0, 103, 163, 1);
     color: #FFFFFF;
+}
+
 }

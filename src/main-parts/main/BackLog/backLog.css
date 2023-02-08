@@ -1,0 +1,9 @@
+.backlog {
+    display: flex;
+    flex-direction: column;
+    background-color:#EBECF0;
+    border-radius: 5px;
+    margin: 8px;
+    width: 282px;
+    min-height: 300px;
+}

@@ -1,0 +1,42 @@
+.footer {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 55px;
+    /* width: 1250px; */
+    width: 100vw;
+    background-color: rgba(0, 103, 163, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-tasks {
+    margin: 0;
+    height: 100%;
+    margin-left: 21px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    width: auto;
+}
+
+.autor {
+    margin: 0;
+    position: relative;
+    right: 19px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 21px;
+    line-height: 100%;
+    text-align: Left;
+    vertical-align: Top;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 21px;
+}

@@ -1,4 +1,9 @@
+@media all and (orientation: landscape), all and (min-width: 1235px) { 
+
 .container {
-    max-width: 1250px; 
     margin: 0 auto;
+    width: 100vw;
+    margin: 0 auto;
+}
+
 }

@@ -1,0 +1,23 @@
+.main-button{
+    color: #5E6C84;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 21px;
+    line-height: 100%;
+    text-align: Left;
+    vertical-align: Top;
+    border: none;
+    border-color: none;
+    width: 102px;
+    height: 29px;
+    cursor: pointer;
+    margin: 3px;
+    position: relative;
+    bottom: 0px;
+    left: 15px;
+}
+.main-button:hover {
+    background-color:rgba(0, 121, 191, 1);
+    color: white;
+}
