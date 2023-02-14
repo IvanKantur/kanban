@@ -43,7 +43,7 @@ export const Column = (props) => {
 
                     {isNewTaskInputShown &&
                     <div>
-                        <input onInput={onInputCard}  placeholder="Add task name"/>
+                        <input onInput={onInputCard}  placeholder="Add task name" />
                     </div>
                     }
 
