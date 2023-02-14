@@ -1,16 +1,34 @@
-import React from 'react';
-import './App.css';
-import Footer from './main-parts/footer/Footer';
-import Header from './main-parts/header/Header';
-import MainBlock from './main-parts/main-block/Main-block';
+import {Footer} from "./components/footer/footer";
+import {Header} from "./components/header/header";
+import {Layout} from "./components/layout/layout";
+import {Board} from "./components/board/board";
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+import {Card} from "./components/board/card/card";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Board/>
+    },
+    {
+        path: "/tasks/:cardId",
+        element: <Card/>
+    }
+    ])
 
 function App() {
   return (
-    <div className="App container">
-      <Header/>
-      <MainBlock/>
-      <Footer/>
-    </div>
+          <Layout>
+              <Header/>
+              <main>
+                  <RouterProvider router={router}/>
+              </main>
+              <Footer/>
+          </Layout>
+
   );
 }
 
